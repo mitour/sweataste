@@ -10853,24 +10853,46 @@ textarea.form-control-lg {
   padding: 0;
   margin-bottom: 0;
 }
-.card_list.flex {
-  gap: 20px;
-}
 .card_list h5, .card_list .h5 {
   margin-bottom: 0;
 }
 .card_list .card {
-  border-radius: 0;
+  border: 0;
+}
+.card_list.flex {
+  gap: 20px;
+}
+.card_list .card_img {
+  position: relative;
+}
+.card_list .card_img::after {
+  content: attr(tag);
+  position: absolute;
+  top: 0;
+  left: 20px;
+  padding: 10px;
+  background-color: #3F5D45;
+  color: #EAF0ED;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  letter-spacing: 3px;
+}
+.card_list .card_img .like {
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 .card_list .card_body {
-  text-align: center;
   padding: 0;
 }
 .card_list .card_title {
-  padding: 14px 0;
-  width: calc(100% - 43%);
-  font-weight: 400;
+  margin-bottom: 0;
   border: 1px solid #EAF0ED;
+  padding: 14px;
+  text-align: center;
+  width: calc(100% - 43%);
+  font-weight: 300;
 }
 .card_list .price {
   width: 43%;
@@ -10881,10 +10903,11 @@ textarea.form-control-lg {
   content: "NT$ ";
 }
 .card_list .card_btn {
-  font-size: 1.5rem;
-  padding: 16px;
-  font-weight: 600;
+  background-color: #EAF0ED;
   color: #3F5D45;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 16px;
   border-radius: 0;
 }
 

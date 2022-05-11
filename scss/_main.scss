@@ -78,29 +78,50 @@
     }
   }
 }
+
 .card_list {
   padding: 0; // 覆蓋 bootstrap row>* 設定
   margin-bottom: 0; // 覆蓋 bootstrap ul 設定
+  h5 {
+    margin-bottom: 0; // 覆蓋 bootstrap h5 設定
+  }
+  .card {
+    border: 0; // 覆蓋 bootstrap card 設定
+  }
   &.flex {
     gap: 20px;
   }
-  h5 {
-    margin-bottom: 0; // 覆蓋 bootstrap 設定
-  }
-  .card {
-    border-radius: 0;
+  .card_img {
+    position: relative;
+    &::after {
+      content: attr(tag);
+      position: absolute;
+      top: 0;
+      left: 20px;
+      padding: 10px;
+      background-color: $primary;
+      color: $primary_lighten;
+      writing-mode: vertical-lr;
+      letter-spacing: 3px;
+    }
+    .like {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
   }
   .card_body {
-    text-align: center;
-    padding: 0;
+    padding: 0; // 覆蓋 bootstrap card-body 設定
   }
   .card_title {
-    padding: 14px 0;
-    width: calc(100% - 43%);
-    font-weight: 400;
+    margin-bottom: 0; // 覆蓋 bootstrap card-title 設定
     border: 1px solid $primary_lighten;
+    padding: 14px;
+    text-align: center;
+    width: calc(100% - 43%);
+    font-weight: 300;
   }
-  .price{
+  .price {
     width: 43%;
     border-left: 0;
     font-weight: 600;
@@ -109,11 +130,12 @@
     }
   }
   .card_btn {
-    font-size: 1.5rem;
-    padding: 16px;
-    font-weight: 600;
+    background-color: $primary_lighten;
     color: $primary;
-    border-radius: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 16px;
+    border-radius: 0; // 覆蓋 bootstrap btn 設定
   }
 }
 
