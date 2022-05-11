@@ -10812,6 +10812,14 @@ textarea.form-control-lg {
 .navbar .container_fluid {
   padding: 0;
 }
+.navbar .navbar_brand {
+  margin-top: 0;
+}
+.navbar .navbar_collapse {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
 .navbar .nav_item .nav_link {
   padding: 10px 60px 8px 0;
 }

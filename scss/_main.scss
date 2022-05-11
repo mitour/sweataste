@@ -41,6 +41,12 @@
   .container_fluid {
     padding: 0;
   }
+  .navbar_brand {
+    margin-top: 0;
+  }
+  .navbar_collapse {
+    justify-content: flex-end;
+  }
   .nav_item {
     .nav_link {
       padding: 10px 60px 8px 0;
