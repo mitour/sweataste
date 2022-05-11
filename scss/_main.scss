@@ -1,0 +1,128 @@
+.wrap {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 42px;
+}
+
+.hidden_text {
+  text-indent: -101%;
+  overflow: hidden;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mt_60 {
+  margin-top: 60px;
+}
+
+.mt_30 {
+  margin-top: 30px;
+}
+
+.hightlight {
+  background: $primary_lighten;
+  border-color: $primary_lighten;
+}
+
+.row_m0 {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.navbar {
+  padding: 30px 0;
+  .container_fluid {
+    padding: 0;
+  }
+  .nav_item {
+    .nav_link {
+      padding: 10px 60px 8px 0;
+    }
+    &:last-child .nav_link {
+      padding-left: 20px;
+      padding-right: 0;
+    }
+  }
+}
+
+.aside {
+  padding: 0; // 覆蓋 bootstrap row>* 設定
+  padding-right: 20px;
+  a {
+    text-decoration: none;
+  }
+  .aside_title {
+    color: $primary_lighten;
+    background: $primary;
+  }
+  .aside_item {
+    text-align: center;
+    padding: 16px;
+    margin-bottom: 0;
+    &.active {
+      background: $primary_lighten;
+      border-color: $primary_lighten;
+    }
+  }
+}
+.card_list {
+  padding: 0; // 覆蓋 bootstrap row>* 設定
+  margin-bottom: 0; // 覆蓋 bootstrap ul 設定
+  &.flex {
+    gap: 20px;
+  }
+  h5 {
+    margin-bottom: 0; // 覆蓋 bootstrap 設定
+  }
+  .card {
+    border-radius: 0;
+  }
+  .card_body {
+    text-align: center;
+    padding: 0;
+  }
+  .card_title {
+    padding: 14px 0;
+    width: calc(100% - 43%);
+    font-weight: 400;
+    border: 1px solid $primary_lighten;
+  }
+  .price{
+    width: 43%;
+    border-left: 0;
+    font-weight: 600;
+    &::before {
+      content: 'NT$ ';
+    }
+  }
+  .card_btn {
+    font-size: 1.5rem;
+    padding: 16px;
+    font-weight: 600;
+    color: $primary;
+    border-radius: 0;
+  }
+}
+
+.pagination {
+  margin-bottom: 0; // 覆蓋 bootstrap ul 設定
+  .page_link {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    padding: 16px;
+  }
+}
+
+@media screen and(max-width: 767px) {
+  .aside {
+    padding-right: 0;
+  }
+}
