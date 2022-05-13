@@ -10763,6 +10763,15 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+*, *::after, *::before {
+  outline: solid;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
 .wrap {
   max-width: 1024px;
   margin: 0 auto;
@@ -10807,7 +10816,7 @@ textarea.form-control-lg {
 }
 
 .navbar {
-  padding: 30px 0;
+  padding: 0;
 }
 .navbar .container_fluid {
   padding: 0;
@@ -10821,10 +10830,12 @@ textarea.form-control-lg {
           justify-content: flex-end;
 }
 .navbar .nav_item .nav_link {
-  padding: 10px 60px 8px 0;
+  padding: 40px 30px 38px;
+  color: #3F5D45;
+  font-weight: 600;
 }
 .navbar .nav_item:last-child .nav_link {
-  padding-left: 20px;
+  padding-left: 50px;
   padding-right: 0;
 }
 
@@ -10833,20 +10844,22 @@ textarea.form-control-lg {
   padding-right: 20px;
 }
 .aside a {
-  text-decoration: none;
-}
-.aside .aside_title {
-  color: #EAF0ED;
-  background: #3F5D45;
+  padding: 16px 48px;
 }
 .aside .aside_item {
   text-align: center;
-  padding: 16px;
+  padding: 0;
   margin-bottom: 0;
 }
 .aside .aside_item.active {
   background: #EAF0ED;
   border-color: #EAF0ED;
+}
+.aside .aside_title {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: #EAF0ED;
+  background: #3F5D45;
 }
 
 .card_list {
