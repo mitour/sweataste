@@ -10763,8 +10763,9 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-*, *::after, *::before {
-  outline: solid;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -10784,6 +10785,7 @@ a {
   height: 0;
   margin: 0;
   padding: 0;
+  font-size: 0;
 }
 
 .flex {
@@ -10822,7 +10824,10 @@ a {
   padding: 0;
 }
 .navbar .navbar_brand {
-  margin-top: 0;
+  padding: 0;
+}
+.navbar .logo {
+  height: 40px;
 }
 .navbar .navbar_collapse {
   -webkit-box-pack: end;
