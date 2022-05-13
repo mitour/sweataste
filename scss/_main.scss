@@ -31,8 +31,8 @@ a {
   margin-top: 60px;
 }
 
-.mt_30 {
-  margin-top: 30px;
+.mt_10 {
+  margin-top: 10px;
 }
 
 .hightlight {
@@ -100,9 +100,10 @@ a {
   }
   .card {
     border: 0; // 覆蓋 bootstrap card 設定
+    margin-bottom: 20px;
   }
   &.flex {
-    gap: 20px;
+    justify-content: space-between;
   }
   .card_img {
     position: relative;

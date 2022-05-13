@@ -10801,8 +10801,8 @@ a {
   margin-top: 60px;
 }
 
-.mt_30 {
-  margin-top: 30px;
+.mt_10 {
+  margin-top: 10px;
 }
 
 .hightlight {
@@ -10871,9 +10871,12 @@ a {
 }
 .card_list .card {
   border: 0;
+  margin-bottom: 20px;
 }
 .card_list.flex {
-  gap: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .card_list .card_img {
   position: relative;
