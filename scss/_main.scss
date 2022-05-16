@@ -70,6 +70,14 @@ a {
       padding: 40px 30px 38px; // 擴大連結可點擊範圍
       color: $primary;
       font-weight: 600;
+      transition: all 0.15s ease-in-out;
+      &:hover {
+        color: $primary_lighten;
+        background-color: $primary;
+      }
+      &:last-of-type:hover img {
+        filter: invert(95%) sepia(99%) saturate(4%) hue-rotate(129deg) brightness(103%) contrast(100%);
+      }
     }
     &:last-child .nav_link {
       padding-left: 50px;
@@ -83,6 +91,12 @@ a {
   padding-right: 20px;
   a {
     padding: 16px 48px;
+  }
+  .list-group-item-action {
+    &:hover, &:focus {
+      background-color: $primary_lighten;
+      border-color: $primary_lighten;
+    }
   }
   .aside_item {
     text-align: center;
@@ -131,6 +145,10 @@ a {
       position: absolute;
       top: 20px;
       right: 20px;
+      transition: all 0.6s ease-in-out;
+      &:hover {
+        transform: scale(1.2) rotate(360deg);
+      }
     }
   }
   .card_body {
@@ -159,6 +177,11 @@ a {
     font-weight: 600;
     padding: 16px;
     border-radius: 0; // 覆蓋 bootstrap btn 設定
+    transition: all 0.15s ease-in-out;
+    &:hover {
+      color: $primary_lighten;
+      background-color: $primary;
+    }
   }
 }
 
@@ -169,6 +192,16 @@ a {
     height: 60px;
     text-align: center;
     padding: 16px;
+    transition: all 0.15s ease-in-out;
+    &:hover {
+      color: $primary_lighten;
+      background-color: $primary;
+      border-color: $primary;
+    }
+    &:first-of-type:hover img,
+    &:last-of-type:hover img {
+      filter: invert(95%) sepia(99%) saturate(4%) hue-rotate(129deg) brightness(103%) contrast(100%);
+    }
   }
 }
 
